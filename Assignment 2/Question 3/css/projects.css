@@ -1,0 +1,81 @@
+/*
+==========================
+====universal thingers====
+==========================
+*/
+
+body{
+	background-color: #41B3A3;
+	font-family: 'Yusei Magic', sans-serif;
+}
+
+img{
+	padding: 20px;
+}
+
+a{
+	padding: 10px;
+	color: black;
+	text-decoration: none;
+}
+
+a:hover{
+	background-color: #E8A87C;
+	color: black;
+	text-decoration: none;
+}
+
+/*
+=======================
+====general classes====
+=======================
+*/
+
+.padless{
+	padding: 0px;
+}
+
+.padded{
+	padding-top: 60px;
+	padding-bottom: 10px;
+	padding-left: 10px;
+}
+
+.marginless{
+	margin: 0px;
+}
+
+.whiteBacked{
+	background-color: white;
+}
+
+/*
+================
+===specifics====
+================
+*/
+
+#topNav{
+	background-color: #E27D60;
+	font-size: 20px;
+}
+
+#sideNav{
+	background-color: #E27D60;
+	font-size: 50px;
+}
+
+#location{
+	background-color: #E8A87C;
+}
+
+#footer{
+	background-color: #E27D60;
+}
+
+@media (max-width: 1200px){
+	#sideNav{
+		background-color: #E27D60;
+		font-size: 30px;
+	}
+}

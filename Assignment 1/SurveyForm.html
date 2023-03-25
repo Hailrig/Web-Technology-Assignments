@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Assignment 1 Q1</title>
+</head>
+<style>
+	.tooltipUser{
+		position: relative;
+		display: inline-block;
+	}
+	.tooltipUser .tooltiptext{
+		visibility: hidden;
+		text-align: center;
+		top: -5px;
+		left: 105%;
+	}
+	.tooltipUser:hover .tooltiptext {
+		visibility: visible;
+	}
+</style>
+<body>
+	<form>
+		<div class="tooltipUser">
+			<label for="name">Enter your name:</label><br>
+			<input type="text" name="name" id="name" placeholder="THE GREAT MOTHMAN">
+			<span class="tooltiptext">Present your name to the great Mothman that he may approve of your existance</span>
+		</div>
+		<br>
+
+		<div class="tooltipUser">
+			<label for="pNumber">Enter your phone number:</label><br>
+			<input type="text" name="pNumber" id="pNumber" placeholder="666-6666">
+			<span class="tooltiptext">Ringy-Dingy</span>
+		</div>
+		<br>
+
+		<div class="tooltipUser">
+			<label for="email">Enter your email:</label><br>
+			<input type="text" name="email" id="email" placeholder="kingflapperton@mothmail.com">
+			<span class="tooltiptext">I wonder if kingflapperton is a taken email....</span>
+		</div>
+		<br>
+
+		<div class="tooltipUser">
+			<label for="dOB">Enter your date of birth:</label><br>
+			<input type="text" name="dOB" id="dOB" placeholder="03/11/2275">
+			<span class="tooltiptext">Currently plain text!</span>
+		</div>
+		<br>
+
+		<div class="tooltipUser">
+			<label for="gender">Enter your gender:</label> 
+			<span class="tooltiptext">Honestly I don't know why the original form didn't have an option for unknowable ancient evils!</span>
+			<legend id="gender">
+				<input type="radio" name="gender" id="unknowableAncientEvil" value="unknowableAncientEvil">
+				<label for="unknowableAncientEvil">Unknowable Ancient Evil</label><br>
+				<input type="radio" name="gender" id="male" value="male">
+				<label for="male">Male</label><br>
+				<input type="radio" name="gender" id="female" value="female">
+				<label for="female">Female</label><br>
+				<input type="radio" name="gender" id="nonBinary" value="nonBinary">
+				<label for="nonBinary">Non binary</label><br>
+			</legend>
+		</div>
+		<br>
+
+		<div class="tooltipUser">
+			<label for="favoriteFood">Enter your favorite food:</label>
+			<span class="tooltiptext">Scrumptious!</span>
+			<legend id="favoriteFood">
+				<input type="checkbox" name="favoriteFood" id="hamburger" value="hamburger">
+				<label for="hamburger">Hamburger</label> <br>
+				<input type="checkbox" name="favoriteFood" id="hotdog" value="hotdog">
+				<label for="hotdog">Hotdog</label><br>
+				<input type="checkbox" name="favoriteFood" id="pizza" value="pizza">
+				<label for="pizza">Pizza</label><br>
+				<input type="checkbox" name="favoriteFood" id="soulsOfMortals" value="soulsOfMortals">
+				<label for="soulsOfMortals">The souls of mortals</label><br>
+			</legend>
+		</div>
+		<br>
+
+		<div class="tooltipUser">
+			<label for="prayers">Offer your prayers to the Mothman:</label>
+			<span class="tooltiptext">He prefers his prayers in Latin but English will do</span><br>
+			<textarea name="prayers" id="prayers" rows="15" cols="30" placeholder="Come forth and offer your prayer"></textarea>
+		</div>
+
+		<p align="right">
+		<input type="submit" value="submit">
+		</p>
+
+	</form>
+</body>
+</html>

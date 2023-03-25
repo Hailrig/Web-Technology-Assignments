@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Assignment 2 Q2</title>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+	<script src="js/form.js"></script>
+</head>
+<style>
+	.tooltipUser{
+		position: relative;
+		display: inline-block;
+	}
+	.form-group .tooltiptext{
+		visibility: hidden;
+		text-align: center;
+		top: -5px;
+		left: 105%;
+	}
+	.form-group:hover .tooltiptext {
+		visibility: visible;
+	}
+</style>
+<body>
+	<form name="theForm" onsubmit="return validate()">
+		<div class="form-group">
+			<label for="name">Enter your name:</label><br>
+			<input type="text" name="name" id="name" placeholder="THE GREAT MOTHMAN">
+			<span class="tooltiptext">Present your name to the great Mothman that he may approve of your existance</span>
+		</div>
+		<br>
+
+		<div class="form-group">
+			<label for="pNumber">Enter your phone number:</label><br>
+			<input type="text" name="pNumber" id="pNumber" placeholder="666-666-6666">
+			<span class="tooltiptext">Ringy-Dingy</span>
+		</div>
+		<br>
+
+		<div class="form-group">
+			<label for="email">Enter your email:</label><br>
+			<input type="text" name="email" id="email" placeholder="kingflapperton@mothmail.com">
+			<span class="tooltiptext">I wonder if kingflapperton is a taken email....</span>
+		</div>
+		<br>
+
+		<div class="form-group">
+			<label for="dOB">Enter your date of birth:</label><br>
+			<input type="text" name="dOB" id="dOB" placeholder="2275-03-11">
+			<span class="tooltiptext">The Mothman finds Sci-Fy a little close to home.</span>
+		</div>
+		<br>
+
+		<div class="form-group">
+			<label for="gender">Enter your gender:</label> 
+			<span class="tooltiptext">Honestly I don't know why the original form didn't have an option for unknowable ancient evils!</span>
+			<legend id="gender">
+				<div class="form-check">
+				<input type="radio" name="gender" id="unknowableAncientEvil" value="unknowableAncientEvil">
+				<label for="unknowableAncientEvil">Unknowable Ancient Evil</label><br>
+				</div>
+
+				<div class="form-check">
+				<input type="radio" name="gender" id="male" value="male">
+				<label for="male">Male</label><br>
+				</div>
+
+				<div class="form-check">
+				<input type="radio" name="gender" id="female" value="female">
+				<label for="female">Female</label><br>
+				</div>
+
+				<div class="form-check">
+				<input type="radio" name="gender" id="nonBinary" value="nonBinary">
+				<label for="nonBinary">Non binary</label><br>
+				</div>
+			</legend>
+		</div>
+		<br>
+
+		<p align="right">
+			<input type="submit" value="submit">
+		</p>
+
+	</form>
+</body>
+</html>
